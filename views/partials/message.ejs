@@ -1,0 +1,12 @@
+<% console.log('pythonOutput:', pythonOutput); %>
+<% if (pythonOutput == 1) { %>
+     <img src="./green-check-mark-icon-in-a-circle-tick-symbol-in-green-color-2ABNAN7-removebg-preview.png" alt="" style="width: 200px; height: 200px;">
+  <h1>Your loan can be Approved</h1>
+<% } else if (pythonOutput == 0) { %>
+     <img src="./Screenshot_2024-07-11_211109-removebg-preview.png" alt="" style="width: 200px; height: 200px;">
+  <h1>Your loan cannot be Approved</h1>
+<% } else { %>
+  <h1>Loan approval status unknown</h1>
+  <p>Value of pythonOutput: <%= pythonOutput %></p>
+<% } %>
+
